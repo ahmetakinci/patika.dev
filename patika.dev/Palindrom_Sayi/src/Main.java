@@ -1,7 +1,12 @@
 import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
+        isPalindrom();
+    }
+
+    static void isPalindrom() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Bir Sayı Giriniz: ");
@@ -14,9 +19,11 @@ public class Main {
             reverse_number = (reverse_number * 10) + last_number;
             temp /= 10;
         }
+
         if (reverse_number == a)
             System.out.println(a + " Sayısı Bir Polindrom Sayıdır");
         else
             System.out.println(a + " Sayısı Bir Polindrom Sayı Değildir");
+
     }
 }
